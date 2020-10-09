@@ -12,7 +12,7 @@ print('Presentazione.. ', ser.readlines())
 
 while True:
     val = input('Inserisci Comando (e=exit) --> ')
-    ser.write('test'.encode())
+    ser.write(val.encode())
     print('Risp -> ',ser.readlines())
     if val=='e':
         ser.close()
